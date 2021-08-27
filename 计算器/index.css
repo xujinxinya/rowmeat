@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dome {
+    width: 400px;
+    height: 430px;
+    margin: 100px auto;
+    background: rgb(245, 189, 189);
+    padding: 20px;
+}
+
+.dome input {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    background: rgb(250, 218, 218);
+}
+
+.dome button {
+    width: 90px;
+    height: 60px;
+    background: rgb(250, 218, 218);
+    border: none;
+    margin: 5px;
+    float: left;
+    font-size: 18px;
+}
