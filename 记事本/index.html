@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>记事本</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <h2>小八的记事本</h2>
+        <input type="text" v-model="mes" class="shuru">
+        <button @click="add" class="u-r tianjia">添加记事本</button>
+        <br />
+        <ul>
+            <li v-for="l,i in list">
+                {{l}}
+                <a href="#" @click="deleteRow(i)" class="u-r">×</a>
+            </li>
+        </ul>
+        <br />
+        <span class="shu">总数量：{{list.length}} 条 </span>
+        <button v-show="list.length!=0" @click="deleteAll" class="u-r tianjia">clear</button>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                list: ["吃章鱼小丸子", "吃刨冰", "吃烧烤"],
+                mes: ""
+            },
+            methods: {
+                add() {
+                    if (this.mes != "") {
+                        console.log(this.mes);
+                        this.list.push(this.mes);
+                    }
+                    this.mes = ""
+                },
+                deleteRow(i) {
+                    this.list.splice(i, 1);
+                },
+                deleteAll() {
+                    this.list = []
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

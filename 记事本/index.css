@@ -1,0 +1,49 @@
+#app {
+    margin-left: 300px;
+    width: 500px;
+    background-color: rgb(253, 207, 221);
+    border: rgb(250, 135, 160);
+    border-radius: 2px;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 116, 139);
+}
+
+.u-r {
+    float: right;
+}
+
+li {
+    margin-top: 10px;
+    color: rgb(73, 71, 71);
+}
+
+.shuru {
+    width: 400px;
+    height: 25px;
+    background-color: rgb(253, 234, 241);
+    border: rgb(255, 116, 139);
+    border-radius: 10px;
+}
+
+.tianjia {
+    height: 25px;
+    background-color: rgb(253, 234, 241);
+    color: rgb(255, 116, 139);
+    border: none;
+    font-family: '黑体';
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(41, 37, 38);
+    padding-right: 30px;
+}
+
+.shu {
+    color: rgb(51, 50, 50);
+}
